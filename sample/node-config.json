@@ -55,6 +55,11 @@
     "doc": "+ 是否要空闲\n",
     "desc": "是否要空闲"
 },{
+    "name": "ShouldMoveToTarget",
+    "type": "Condition",
+    "doc": "+ 是否要追击\n",
+    "desc": "是否要追击"
+},{
     "name": "ShouldPatrol",
     "type": "Condition",
     "doc": "+ 是否要巡逻\n",
