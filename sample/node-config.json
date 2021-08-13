@@ -45,6 +45,21 @@
     }],
     "desc": "比较值大小"
 }, {
+    "name": "Attacking",
+    "type": "Condition",
+    "doc": "+ 是否正在攻击\n",
+    "desc": "是否正在攻击"
+}, {
+    "name": "ShouldIdle",
+    "type": "Condition",
+    "doc": "+ 是否要空闲\n",
+    "desc": "是否要空闲"
+},{
+    "name": "ShouldPatrol",
+    "type": "Condition",
+    "doc": "+ 是否要巡逻\n",
+    "desc": "是否要巡逻"
+},{
     "name": "FindEnemy",
     "output": ["目标单位"],
     "type": "Condition",
@@ -80,6 +95,10 @@
     "name": "Idle",
     "type": "Action",
     "desc": "待机"
+},{
+    "name": "Patrol",
+    "type": "Action",
+    "desc": "巡逻"
 }, {
     "name": "Log",
     "type": "Action",

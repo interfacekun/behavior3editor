@@ -1,0 +1,65 @@
+{
+  "name": "monster_1",
+  "root": {
+    "id": 1,
+    "name": "Selector",
+    "desc": "怪物ai",
+    "args": {},
+    "children": [
+      {
+        "id": 2,
+        "name": "Sequence",
+        "desc": "攻击",
+        "args": {},
+        "children": [
+          {
+            "id": 3,
+            "name": "Attacking"
+          },
+          {
+            "id": 4,
+            "name": "FindEnemy"
+          },
+          {
+            "id": 5,
+            "name": "Attack"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Selector",
+        "children": [
+          {
+            "id": 7,
+            "name": "Sequence",
+            "children": [
+              {
+                "id": 8,
+                "name": "ShouldIdle"
+              },
+              {
+                "id": 9,
+                "name": "Idle"
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "name": "Sequence",
+            "children": [
+              {
+                "id": 11,
+                "name": "ShouldPatrol"
+              },
+              {
+                "id": 12,
+                "name": "Patrol"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
