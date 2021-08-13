@@ -1,5 +1,4 @@
 {
-  "isRelative": true,
-  "nodeConfPath": "node-config.json",
-  "workdir": "workdir"
+  "nodeConfPath": "sample/node-config.json",
+  "workdir": "sample/workdir"
 }
