@@ -29,10 +29,14 @@
       {
         "id": 6,
         "name": "Selector",
+        "desc": "空闲",
+        "args": {},
         "children": [
           {
             "id": 7,
             "name": "Sequence",
+            "desc": "待机",
+            "args": {},
             "children": [
               {
                 "id": 8,
@@ -47,6 +51,8 @@
           {
             "id": 10,
             "name": "Sequence",
+            "desc": "巡逻",
+            "args": {},
             "children": [
               {
                 "id": 11,
@@ -57,6 +63,22 @@
                 "name": "Patrol"
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Sequence",
+        "desc": "追踪敌人",
+        "args": {},
+        "children": [
+          {
+            "id": 14,
+            "name": "ShouldMoveToTarget"
+          },
+          {
+            "id": 15,
+            "name": "MoveToTarget"
           }
         ]
       }
