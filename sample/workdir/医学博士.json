@@ -3,6 +3,60 @@
   "root": {
     "id": 1,
     "name": "Sequence",
-    "desc": "新建行为树"
+    "desc": "新建行为树",
+    "children": [
+      {
+        "id": 2,
+        "name": "Selector",
+        "children": [
+          {
+            "id": 3,
+            "name": "Cmp",
+            "desc": "7点",
+            "args": {
+              "ge": null,
+              "gt": null,
+              "lt": null,
+              "eq": 700
+            },
+            "input": [
+              "time"
+            ],
+            "children": [
+              {
+                "id": 4,
+                "name": "Wakeup",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Cmp",
+            "desc": "9点",
+            "args": {
+              "ge": null,
+              "gt": null,
+              "lt": 705,
+              "eq": 900
+            },
+            "input": [
+              "time"
+            ],
+            "children": [
+              {
+                "id": 6,
+                "name": "MoveToTarget",
+                "desc": "去教学仓",
+                "args": {},
+                "input": [
+                  "Node.1"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
