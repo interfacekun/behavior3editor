@@ -7,7 +7,7 @@
     "prestart": "webpack --config webpack.config.js",
     "start": "electron .",
     "build_osx": "electron-packager ./ behavior3editor --platform=darwin --arch=x64 --out=./build --overwrite",
-    "build_win32": "electron-packager ./ behavior3editor --platform=darwin --arch=x64 --out=./build --overwrite",
+    "build_win32": "electron-packager ./ behavior3editor --platform=win32 --arch=x64 --out=./build --overwrite",
     "dist_osx": "npm run prestart && electron-builder --dir && electron-builder --darwin --x64",
     "dist_win32": "npm run prestart && electron-builder --dir && electron-builder --win32 --x64"
   },
