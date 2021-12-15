@@ -8,8 +8,8 @@
     "start": "electron .",
     "build_osx": "electron-packager ./ behavior3editor --platform=darwin --arch=x64 --out=./build --overwrite",
     "build_win32": "electron-packager ./ behavior3editor --platform=win32 --arch=x64 --out=./build --overwrite",
-    "dist_osx": "npm run prestart && electron-builder --dir && electron-builder --darwin --x64",
-    "dist_win32": "npm run prestart && electron-builder --dir && electron-builder --win32 --x64"
+    "dist_osx": "npm run prestart && ./node_modules/.bin/electron-builder --dir && ./node_modules/.bin/electron-builder --darwin --x64",
+    "dist_win32": "npm run prestart && ./node_modules/.bin/electron-builder --dir && ./node_modules/.bin/electron-builder --win --x64"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
     "copy-webpack-plugin": "^6.3.1",
     "css-loader": "^4.3.0",
     "electron": "^10.1.3",
-    "electron-builder": "^22.9.1",
+    "electron-builder": "^22.14.5",
     "electron-localshortcut": "^3.2.1",
     "electron-packager": "^15.1.0",
     "file-loader": "^6.1.1",
